@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk";
+  background-image: url(../img/bg_main.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row;
+  max-width: 1050px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.cards .front_card {
+  width: 447px;
+  height: 245px;
+  border-radius: 10px;
+  color: #fff;
+  background-image: url(../img/bg_card.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 28px 32px 26.5px;
+  box-sizing: border-box;
+  margin-bottom: 37px;
+}
+.cards .front_card .circles {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+.cards .front_card .circles .big_circle {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  background: #fff;
+}
+.cards .front_card .circles .small_circle {
+  width: 21.15px;
+  height: 21.15px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.cards .front_card .card_info .card_number {
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 25.5px;
+}
+.cards .front_card .card_info div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.cards .back_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 447px;
+  height: 245px;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(169deg, #FFF 0%, #D2D3D9 100%);
+  margin-left: 94px;
+}
+.cards .back_card .rectangle_1 {
+  width: 100%;
+  height: 54px;
+  background: #2F2F2F;
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+.cards .back_card .rectangle_2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 361px;
+  height: 38px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  background: #ADB5BE;
+  margin-bottom: 33px;
+  padding-right: 16px;
+}
+
+form .input_area > div {
+  margin-bottom: 26px;
+}
+form .input_area p {
+  display: none;
+  font-size: 12px;
+  color: #FF5050;
+  margin-top: 9px;
+}
+form .input_area .date_CVC {
+  margin-bottom: 40px;
+}
+form label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+  padding-bottom: 9px;
+}
+form input:not(input[type=submit]) {
+  width: 381px;
+  height: 45px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+form input:not(input[type=submit]):hover, form input:not(input[type=submit]):focus {
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(white, white) padding-box, linear-gradient(#6348FE, #610595) border-box;
+  border-color: transparent;
+}
+form input::-moz-placeholder {
+  opacity: 0.25;
+  font-size: 18px;
+  color: #21092F;
+}
+form input::placeholder {
+  opacity: 0.25;
+  font-size: 18px;
+  color: #21092F;
+}
+form input::-webkit-inner-spin-button {
+  display: none;
+}
+form .date_CVC {
+  display: flex;
+  justify-content: space-between;
+}
+form .date_CVC .date_input {
+  display: flex;
+  gap: 10px;
+}
+form .date_CVC .date_input input {
+  width: 80px;
+}
+form .date_CVC .CVC input {
+  width: 191px;
+}
+form input[type=submit] {
+  width: 381px;
+  height: 53px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  background: #21092F;
+}
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+form .modal_page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+form .modal_page .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background: var(--gradient, linear-gradient(164deg, #6348FE 0%, #610595 100%));
+  margin-bottom: 35px;
+}
+form .modal_page .info {
+  text-align: center;
+  margin-bottom: 48px;
+}
+form .modal_page .info .thanks {
+  font-size: 28px;
+  letter-spacing: 3.422px;
+  margin-bottom: 16px;
+}
+form .modal_page .info .details {
+  font-size: 18px;
+  color: #8F8694;
+}
+form .modal_page button {
+  width: 381px;
+  height: 53px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 8px;
+  background: #21092F;
+}
+form .modal_page button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 970px) {
+  body {
+    background-size: 100% 240px;
+  }
+  main {
+    gap: 48px;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cards .front_card {
+    width: 285px;
+    height: 156px;
+    padding: 17.6px 20.9px 19.6px 19px;
+    box-sizing: border-box;
+    margin-top: -63px;
+    margin-bottom: 0;
+  }
+  .cards .front_card .circles {
+    gap: 10px;
+    margin-bottom: 37px;
+  }
+  .cards .front_card .circles .big_circle {
+    width: 30px;
+    height: 30px;
+  }
+  .cards .front_card .circles .small_circle {
+    width: 13.5px;
+    height: 13.5px;
+  }
+  .cards .front_card .card_info .card_number {
+    font-size: 18px;
+    letter-spacing: 2.2px;
+    margin-bottom: 17px;
+  }
+  .cards .front_card .card_info div {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+  .cards .back_card {
+    width: 286px;
+    height: 157px;
+    margin-left: 57px;
+  }
+  .cards .back_card .rectangle_1 {
+    height: 34.6px;
+    margin-top: 14.74px;
+    margin-bottom: 15.38px;
+  }
+  .cards .back_card .rectangle_2 {
+    width: 231px;
+    height: 29.74px;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    padding-right: 10px;
+  }
+  .cards .back_card .detailes {
+    display: none;
+  }
+  form .input_area > div {
+    margin-bottom: 20px;
+  }
+  form .input_area .date_CVC {
+    margin-bottom: 28px;
+  }
+  form input:not(input[type=submit]) {
+    width: 327px;
+  }
+  form .date_CVC .date_input {
+    gap: 8px;
+  }
+  form .date_CVC .date_input input {
+    width: 72px;
+  }
+  form .date_CVC .CVC input {
+    width: 164px;
+  }
+  form input[type=submit] {
+    width: 327px;
+  }
+  form .modal_page button {
+    width: 327px;
+  }
+}/*# sourceMappingURL=style.css.map */
