@@ -95,16 +95,16 @@ main {
   padding-right: 16px;
 }
 
-form .input_area > div {
+form > div {
   margin-bottom: 26px;
 }
-form .input_area p {
+form p {
   display: none;
   font-size: 12px;
   color: #FF5050;
   margin-top: 9px;
 }
-form .input_area .date_CVC {
+form .date_CVC {
   margin-bottom: 40px;
 }
 form label {
@@ -170,13 +170,14 @@ form input[type=submit] {
 form input[type=submit]:hover {
   cursor: pointer;
 }
-form .modal_page {
+
+.modal_page {
   display: none;
   flex-direction: column;
   align-items: center;
   margin-bottom: 48px;
 }
-form .modal_page .icon {
+.modal_page .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,20 +187,20 @@ form .modal_page .icon {
   background: var(--gradient, linear-gradient(164deg, #6348FE 0%, #610595 100%));
   margin-bottom: 35px;
 }
-form .modal_page .info {
+.modal_page .info {
   text-align: center;
   margin-bottom: 48px;
 }
-form .modal_page .info .thanks {
+.modal_page .info .thanks {
   font-size: 28px;
   letter-spacing: 3.422px;
   margin-bottom: 16px;
 }
-form .modal_page .info .details {
+.modal_page .info .details {
   font-size: 18px;
   color: #8F8694;
 }
-form .modal_page button {
+.modal_page button {
   width: 381px;
   height: 53px;
   font-family: Space Grotesk;
@@ -208,7 +209,7 @@ form .modal_page button {
   border-radius: 8px;
   background: #21092F;
 }
-form .modal_page button:hover {
+.modal_page button:hover {
   cursor: pointer;
 }
 
